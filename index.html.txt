@@ -1,91 +1,101 @@
-Beta SHEIN Site 
-Github 
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trendy Fashion Deals</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f8f8f8;
-            margin: 0;
-            padding: 0;
-        }
-        .header {
-            background-color: #000;
-            color: #fff;
-            padding: 20px;
-            font-size: 24px;
-        }
-        .hero {
-            padding: 40px;
-            background-color: #fff;
-        }
-        .hero h1 {
-            color: #000;
-        }
-        .cta {
-            background-color: #ff4081;
-            color: #fff;
-            padding: 15px 25px;
-            text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
-        }
-        .products {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-        }
-        .product {
-            background-color: #fff;
-            padding: 15px;
-            width: 250px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .footer {
-            background-color: #000;
-            color: #fff;
-            padding: 20px;
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elle's Virtual Market</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow-x: hidden;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background: #000;
+      color: #fff;
+      position: relative;
+    }
+    .background-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .hero h1 {
+      font-size: 3em;
+      color: #ff5ecb;
+      text-shadow: 0 0 15px #ff5ecb;
+    }
+    .products {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      padding: 40px 20px;
+    }
+    .product {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 20px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 0 20px #ff5ecb;
+    }
+    .product video {
+      width: 100%;
+      border-radius: 15px;
+    }
+    .product h2 {
+      color: #ff5ecb;
+      margin-top: 15px;
+    }
+    .cta-button {
+      background-color: #ff5ecb;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 15px;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+  </style>
 </head>
 <body>
-    <div class="header">Trendy Fashion Deals</div>
-    
-    <div class="hero">
-        <h1>Affordable. Trendy. Unmatched.</h1>
-        <p>Curated fashion picks for all styles and budgets—secure, stylish, and effortlessly chic.</p>
-        <a href="#shop" class="cta">Shop Now</a>
+  <!-- Background Video -->
+  <video autoplay loop muted playsinline class="background-video">
+    <source src="Video.mov" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Elle's Pick of the Week</h1>
+    <p>Scroll the runway. Experience affordable luxury.</p>
+  </div>
+
+  <!-- Product Section -->
+  <div class="products">
+    <div class="product">
+      <video autoplay loop muted playsinline>
+        <source src="ScreenRecording_04-02-2025 01-01-13_1 2.mov" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h2>White Flat Sandals</h2>
+      <p>Use Code <strong>SPCV5</strong> for 15% OFF</p>
+      <a href="https://onelink.shein.com/10/4k5vnqfcclmu" class="cta-button" target="_blank">Shop Now</a>
     </div>
-    
-    <div class="products" id="shop">
-        <div class="product">
-            <img src="https://via.placeholder.com/200" alt="Product 1">
-            <h3>Trendy Outfit 1</h3>
-            <p>$29.99</p>
-            <a href="#" class="cta">Buy Now</a>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/200" alt="Product 2">
-            <h3>Chic Look 2</h3>
-            <p>$34.99</p>
-            <a href="#" class="cta">Buy Now</a>
-        </div>
-    </div>
-    
-    <div class="footer">
-        <p>Follow us on social media | Contact us | Disclaimer: Affiliate Links Included</p>
-    </div>
+  </div>
 </body>
 </html>
