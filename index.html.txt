@@ -75,7 +75,7 @@
 <body>
   <!-- Background Video -->
   <video autoplay loop muted playsinline class="background-video">
-    <source src="Video.mov" type="video/mp4">
+    <source src="Video.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 
@@ -89,7 +89,7 @@
   <div class="products">
     <div class="product">
       <video autoplay loop muted playsinline>
-        <source src="ScreenRecording_04-02-2025 01-01-13_1 2.mov" type="video/mp4">
+        <source src="Product.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <h2>White Flat Sandals</h2>
