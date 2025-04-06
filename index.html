@@ -23,45 +23,51 @@
       position: fixed;
       right: 0;
       bottom: 0;
-      min-width: 100%;
-      min-height: 100%;
+      min-width: 100vw;
+      min-height: 100vh;
       z-index: -1;
       object-fit: cover;
-      filter: brightness(1.15) contrast(1.15);
     }
 
     .hero {
       text-align: center;
-      padding: 40px 20px 10px;
+      padding: 40px 20px 0;
     }
 
     .hero h1 {
-      font-size: 3em;
+      font-size: 3.8em;
       color: #ff5ecb;
-      text-shadow: 0 0 15px #ff5ecb;
+      font-weight: bold;
+      text-shadow: 0 0 20px #ff5ecb;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      color: #ffffff;
     }
 
     .products {
       display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
-      flex-wrap: wrap;
-      gap: 30px;
-      padding: 0 20px 60px;
+      padding: 20px;
     }
 
     .product-card {
-      background-color: #111;
-      padding: 25px;
-      border-radius: 20px;
+      background: #111;
+      border-radius: 25px;
+      padding: 30px 25px;
       box-shadow: 0 0 25px #ff5ecb;
-      max-width: 340px;
-      margin-top: 20px;
+      max-width: 380px;
+      width: 90%;
+      margin-top: -30px;
+      text-align: center;
     }
 
     .product-card img {
       max-width: 100%;
       border-radius: 12px;
-      display: block;
       margin-bottom: 15px;
     }
 
@@ -73,36 +79,25 @@
 
     .product-card p {
       font-size: 1em;
-      line-height: 1.5;
+      color: #fff;
     }
 
     .shop-button {
       display: inline-block;
-      margin-top: 15px;
-      padding: 12px 28px;
+      margin-top: 18px;
+      padding: 12px 25px;
       background-color: #ff5ecb;
       color: #000;
       text-decoration: none;
+      border-radius: 50px;
       font-weight: bold;
-      border-radius: 30px;
-    }
-
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2em;
-      }
-
-      .product-card {
-        margin-top: 10px;
-        padding: 20px;
-      }
     }
   </style>
 </head>
 <body>
   <!-- Background Video -->
   <video class="background-video" autoplay loop muted playsinline>
-    <source src="Video%202.mp4" type="video/mp4">
+    <source src="Video%202.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 
@@ -115,14 +110,11 @@
   <!-- Product Display -->
   <div class="products">
     <div class="product-card">
-      <img src="21684949-7595-4AC5-A712-4002A3AA5FD0.jpeg" alt="White Flat Sandals">
+      <img src="3900409F-E8E5-48B6-9F9A-7A344B1A9888.jpeg" alt="White Flat Sandals">
       <h2>White Flat Sandals</h2>
       <p><strong>Use Code <span style="color:#ff5ecb">SPCV5</span> for 15% OFF</strong></p>
-      <p>
-        <span style="font-size: 1.2em">🔥</span>
-        Snag these must-haves before they're gone! Korean Style Casual Flat Sandals – perfect for beach days, brunch dates, or just flexin' comfy chic vibes.
-      </p>
-      <a class="shop-button" href="https://shein.top/sfjhvo8">Shop Now</a>
+      <p><span style="font-size: 1.2em">🔥</span> Snag these must-haves before they're gone! Korean Style Casual Flat Sandals – perfect for beach days, brunch dates, or just flexin' comfy chic vibes.</p>
+      <a class="shop-button" href="https://shein.com">Shop Now</a>
     </div>
   </div>
 </body>
