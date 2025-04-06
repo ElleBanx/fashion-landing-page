@@ -27,11 +27,12 @@
       min-height: 100%;
       z-index: -1;
       object-fit: cover;
+      filter: brightness(1.15) contrast(1.15);
     }
 
     .hero {
       text-align: center;
-      padding: 50px 20px;
+      padding: 40px 20px 10px;
     }
 
     .hero h1 {
@@ -42,46 +43,59 @@
 
     .products {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      padding: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 0 20px 60px;
     }
 
     .product-card {
-      background: #111;
+      background-color: #111;
+      padding: 25px;
       border-radius: 20px;
-      box-shadow: 0 0 20px #ff5ecb;
-      padding: 20px;
-      width: 90%;
-      max-width: 400px;
-      text-align: center;
+      box-shadow: 0 0 25px #ff5ecb;
+      max-width: 340px;
+      margin-top: 20px;
     }
 
     .product-card img {
-      width: 100%;
+      max-width: 100%;
       border-radius: 12px;
+      display: block;
+      margin-bottom: 15px;
     }
 
     .product-card h2 {
+      font-size: 1.8em;
       color: #ff5ecb;
+      margin-bottom: 10px;
     }
 
     .product-card p {
-      margin: 10px 0;
+      font-size: 1em;
+      line-height: 1.5;
     }
 
     .shop-button {
-      background: #ff5ecb;
-      color: #000;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      font-size: 1em;
-      cursor: pointer;
-      text-decoration: none;
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 15px;
+      padding: 12px 28px;
+      background-color: #ff5ecb;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2em;
+      }
+
+      .product-card {
+        margin-top: 10px;
+        padding: 20px;
+      }
     }
   </style>
 </head>
@@ -101,14 +115,14 @@
   <!-- Product Display -->
   <div class="products">
     <div class="product-card">
-<img src="21684949-7595-4AC5-A712-4002A3AA5FD0.jpeg" alt="White Flat Sandals" />
+      <img src="21684949-7595-4AC5-A712-4002A3AA5FD0.jpeg" alt="White Flat Sandals">
       <h2>White Flat Sandals</h2>
       <p><strong>Use Code <span style="color:#ff5ecb">SPCV5</span> for 15% OFF</strong></p>
       <p>
         <span style="font-size: 1.2em">🔥</span>
         Snag these must-haves before they're gone! Korean Style Casual Flat Sandals – perfect for beach days, brunch dates, or just flexin' comfy chic vibes.
       </p>
-      <a class="shop-button" href="https://shein.com" target="_blank">Shop Now</a>
+      <a class="shop-button" href="https://shein.top/sfjhvo8">Shop Now</a>
     </div>
   </div>
 </body>
