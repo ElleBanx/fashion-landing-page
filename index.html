@@ -3,244 +3,154 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Elle's Virtual Market</title>
-
-  <!-- SEO & Social Sharing -->
-  <meta name="description" content="Elle’s Virtual Market - Explore this week’s affordable luxury pick and enjoy 15% off with code SPCV5!">
-  <meta property="og:title" content="Elle's Pick of the Week – White Flat Sandals" />
-  <meta property="og:description" content="Scroll the runway. Experience affordable luxury. Use code SPCV5 for 15% off!" />
-  <meta property="og:image" content="https://yourimagehost.com/your-thumbnail.jpg" />
-  <meta property="og:url" content="https://ellebanx.github.io/fashion-landing-page/" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- GLightbox CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-
+  <title>BANX ON BANX - Affordable Luxury</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
-      height: 100%;
-      overflow-x: hidden;
       font-family: Arial, sans-serif;
       background: #000;
       color: #fff;
+      overflow-x: hidden;
     }
-
     .background-video {
       position: fixed;
       top: 0;
       left: 0;
-      min-width: 100%;
-      min-height: 100%;
-      z-index: -1;
+      width: 100vw;
+      height: 100vh;
       object-fit: cover;
+      z-index: -1;
     }
-
-    .dashboard {
-      background: rgba(255, 255, 255, 0.05);
-      padding: 12px 20px;
-      text-align: center;
-      font-size: 0.95em;
-      color: #ccc;
-      border-bottom: 1px solid #ff5ecb;
-    }
-
     .hero {
       text-align: center;
-      padding: 40px 20px 10px;
+      padding: 60px 20px 20px;
     }
-
     .hero h1 {
-      font-size: 3em;
+      font-size: 2.5em;
       color: #ff5ecb;
-      font-weight: bold;
       text-shadow: 0 0 15px #ff5ecb;
     }
-
     .hero p {
-      font-size: 1.1em;
+      font-size: 1em;
       color: #fff;
     }
-
     .products {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
       padding: 20px;
-      gap: 20px;
+      gap: 30px;
     }
-
     .product-card {
-      background: rgba(0, 0, 0, 0.85);
+      background: #111;
+      border-radius: 20px;
       padding: 20px;
-      border-radius: 25px;
+      box-shadow: 0 0 15px #ff5ecb;
+      max-width: 380px;
+      width: 90%;
       text-align: center;
-      flex: 1 1 300px;
-      max-width: 360px;
-      box-shadow: 0 0 25px #ff5ecb;
     }
-
     .product-card img {
       width: 100%;
       border-radius: 10px;
       margin-bottom: 15px;
-      cursor: zoom-in;
     }
-
     .product-card h2 {
-      font-size: 1.8em;
+      font-size: 1.3em;
       color: #ff5ecb;
-      margin: 10px 0;
     }
-
     .product-card p {
-      font-size: 1em;
+      font-size: 0.95em;
       color: #fff;
-      line-height: 1.5;
     }
-
     .shop-button {
       display: inline-block;
-      margin-top: 15px;
-      padding: 12px 24px;
-      font-size: 1em;
-      background: #ff5ecb;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #ff5ecb;
       color: #000;
-      font-weight: bold;
       text-decoration: none;
-      border-radius: 30px;
-      box-shadow: 0 0 10px #ff5ecb;
-    }
-
-    .promo-bar {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      background: #ff5ecb;
-      color: #000;
+      border-radius: 25px;
       font-weight: bold;
-      text-align: center;
-      padding: 12px 10px;
-      z-index: 999;
-      font-size: 1em;
-      box-shadow: 0 -2px 10px #ff5ecb;
-    }
-
-    .promo-bar a {
-      color: #000;
-      text-decoration: underline;
-      font-weight: bold;
-      margin-left: 8px;
-    }
-
-    /* Mobile adjustments */
-    @media (max-width: 600px) {
-      .hero h1 {
-        font-size: 2.2em;
-      }
-      .product-card {
-        flex: 1 1 100%;
-        max-width: 100%;
-      }
-      .promo-bar {
-        font-size: 0.9em;
-      }
     }
   </style>
 </head>
 <body>
+<video class="background-video" autoplay loop muted playsinline>
+  <source src="Video%202.mp4" type="video/mp4" />
+</video>
 
-  <!-- Background Video -->
-  <video class="background-video" autoplay loop muted playsinline>
-    <source src="Video 2.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+<div class="hero">
+  <h1>BANX ON BANX</h1>
+  <p>Scroll the runway. Experience affordable luxury.</p>
+</div>
 
-  <!-- Dashboard -->
-  <div class="dashboard">
-    Welcome to Elle's Virtual Market – Your hub for style, deals, and drops!
+<div class="products">
+  <div class="product-card">
+    <img src="product1.jpeg" alt="Product 1">
+    <h2>Product 1 Title</h2>
+    <p><strong>Use Code <span style='color:#ff5ecb'>SPCV5</span> for 15% OFF</strong></p>
+    <p>🔥 Snag these must-haves before they're gone! Description for product 1 goes here.</p>
+    <a class="shop-button" href="https://your-affiliate-link.com">Shop Now</a>
   </div>
 
-  <!-- Hero Section -->
-  <div class="hero">
-    <h1>Elle's Pick of the Week</h1>
-    <p>Scroll the runway. Experience affordable luxury.</p>
+  <div class="product-card">
+    <img src="product2.jpeg" alt="Product 2">
+    <h2>Product 2 Title</h2>
+    <p><strong>Use Code <span style='color:#ff5ecb'>SPCV5</span> for 15% OFF</strong></p>
+    <p>🔥 Snag these must-haves before they're gone! Description for product 2 goes here.</p>
+    <a class="shop-button" href="https://your-affiliate-link.com">Shop Now</a>
   </div>
 
-  <!-- Product Lookbook with Carousel for Product #1 -->
-  <div class="products">
-    <div class="product-card">
-      <!-- Clickable thumbnail that opens the gallery -->
-      <a href="https://raw.githubusercontent.com/ElleBanx/fashion-landing-page/refs/heads/main/IMG_7509.jpeg" class="glightbox" data-gallery="white-sandals">
-        <img src="https://raw.githubusercontent.com/ElleBanx/fashion-landing-page/refs/heads/main/IMG_7509.jpeg" alt="White Flat Sandals" />
-      </a>
-      <!-- Hidden gallery images for lightbox -->
-      <a href="https://raw.githubusercontent.com/ElleBanx/fashion-landing-page/refs/heads/main/IMG_7510.jpeg" class="glightbox" data-gallery="white-sandals" style="display:none;"></a>
-      <a href="https://raw.githubusercontent.com/ElleBanx/fashion-landing-page/refs/heads/main/IMG_7511.jpeg" class="glightbox" data-gallery="white-sandals" style="display:none;"></a>
-      <a href="https://raw.githubusercontent.com/ElleBanx/fashion-landing-page/refs/heads/main/IMG_7512.jpeg" class="glightbox" data-gallery="white-sandals" style="display:none;"></a>
-      <a href="https://raw.githubusercontent.com/ElleBanx/fashion-landing-page/refs/heads/main/IMG_7513.jpeg" class="glightbox" data-gallery="white-sandals" style="display:none;"></a>
-      <a href="https://raw.githubusercontent.com/ElleBanx/fashion-landing-page/refs/heads/main/IMG_7514.jpeg" class="glightbox" data-gallery="white-sandals" style="display:none;"></a>
-
-      <h2>White Flat Sandals</h2>
-      <p><strong>Use Code <span style="color:#ff5ecb;">SPCV5</span> for 15% OFF</strong></p>
-      <p><span style="font-size: 1.2em">🔥</span> Korean Style Casual Flat Sandals – perfect for beach days, brunch dates, or just flexin' comfy chic vibes.</p>
-      <a class="shop-button" href="https://shein.top/7yxc2uq">Shop Now</a>
-    </div>
-    <!-- Repeat similar product-card blocks here for the remaining products -->
+  <div class="product-card">
+    <img src="product3.jpeg" alt="Product 3">
+    <h2>Product 3 Title</h2>
+    <p><strong>Use Code <span style='color:#ff5ecb'>SPCV5</span> for 15% OFF</strong></p>
+    <p>🔥 Snag these must-haves before they're gone! Description for product 3 goes here.</p>
+    <a class="shop-button" href="https://your-affiliate-link.com">Shop Now</a>
   </div>
 
-  <!-- Floating Promo Bar -->
-  <div class="promo-bar">
-    15% Off Sitewide – Use Code <strong>SPCV5</strong>
-    <a href="https://shein.top/7yxc2uq">Shop Now</a>
+  <div class="product-card">
+    <img src="product4.jpeg" alt="Product 4">
+    <h2>Product 4 Title</h2>
+    <p><strong>Use Code <span style='color:#ff5ecb'>SPCV5</span> for 15% OFF</strong></p>
+    <p>🔥 Snag these must-haves before they're gone! Description for product 4 goes here.</p>
+    <a class="shop-button" href="https://your-affiliate-link.com">Shop Now</a>
   </div>
 
-  <!-- Quiz Pop-Up with Embedded Questions -->
-  <div id="quizPopup" class="quiz-popup" style="display:none;">
-    <div class="quiz-content">
-      <span id="closeQuiz" class="close-btn">&times;</span>
-      <h2>Find Your Style Match</h2>
-      <p>Answer a few quick questions to get personalized fashion picks + exclusive deals!</p>
-      <form id="quizForm">
-        <input type="email" name="email" placeholder="Enter your email" required />
-        <select name="style">
-          <option value="">What's your style vibe?</option>
-          <option>Casual Chic</option>
-          <option>Glam & Bold</option>
-          <option>Streetwear</option>
-          <option>Minimalist</option>
-        </select>
-        <select name="occasion">
-          <option value="">What are you shopping for?</option>
-          <option>Everyday Looks</option>
-          <option>Vacation</option>
-          <option>Workwear</option>
-          <option>Date Night</option>
-        </select>
-        <button type="submit">Get My Picks</button>
-      </form>
-    </div>
+  <div class="product-card">
+    <img src="product5.jpeg" alt="Product 5">
+    <h2>Product 5 Title</h2>
+    <p><strong>Use Code <span style='color:#ff5ecb'>SPCV5</span> for 15% OFF</strong></p>
+    <p>🔥 Snag these must-haves before they're gone! Description for product 5 goes here.</p>
+    <a class="shop-button" href="https://your-affiliate-link.com">Shop Now</a>
   </div>
 
-  <!-- GLightbox Script -->
-  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-  <script>
-    // Initialize GLightbox
-    const lightbox = GLightbox({
-      selector: '.glightbox'
-    });
-    
-    // Quiz popup logic: shows after 5 seconds
-    window.onload = function() {
-      setTimeout(function(){
-        document.getElementById('quizPopup').style.display = 'flex';
-      }, 5000);
-    };
+  <div class="product-card">
+    <img src="product6.jpeg" alt="Product 6">
+    <h2>Product 6 Title</h2>
+    <p><strong>Use Code <span style='color:#ff5ecb'>SPCV5</span> for 15% OFF</strong></p>
+    <p>🔥 Snag these must-haves before they're gone! Description for product 6 goes here.</p>
+    <a class="shop-button" href="https://your-affiliate-link.com">Shop Now</a>
+  </div>
 
-    document.getElementById('closeQuiz').onclick = function() {
-      document.getElementById('quizPopup').style.display = 'none';
-    };
-  </script>
+  <div class="product-card">
+    <img src="product7.jpeg" alt="Product 7">
+    <h2>Product 7 Title</h2>
+    <p><strong>Use Code <span style='color:#ff5ecb'>SPCV5</span> for 15% OFF</strong></p>
+    <p>🔥 Snag these must-haves before they're gone! Description for product 7 goes here.</p>
+    <a class="shop-button" href="https://your-affiliate-link.com">Shop Now</a>
+  </div>
+
+  <div class="product-card">
+    <img src="product8.jpeg" alt="Product 8">
+    <h2>Product 8 Title</h2>
+    <p><strong>Use Code <span style='color:#ff5ecb'>SPCV5</span> for 15% OFF</strong></p>
+    <p>🔥 Snag these must-haves before they're gone! Description for product 8 goes here.</p>
+    <a class="shop-button" href="https://your-affiliate-link.com">Shop Now</a>
+  </div>
+</div>
+
 </body>
 </html>
