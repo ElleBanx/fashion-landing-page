@@ -4,6 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Elle's Virtual Market</title>
+
+  <!-- SEO & Social Sharing -->
+  <meta name="description" content="Elle’s Virtual Market - Explore this week’s affordable luxury pick and enjoy 15% off with code SPCV5!">
+  <meta property="og:title" content="Elle's Pick of the Week – White Flat Sandals" />
+  <meta property="og:description" content="Scroll the runway. Experience affordable luxury. Use code SPCV5 for 15% off!" />
+  <meta property="og:image" content="https://yourimagehost.com/your-thumbnail.jpg" />
+  <meta property="og:url" content="https://ellebanx.github.io/fashion-landing-page/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
   <style>
     html, body {
       margin: 0;
@@ -11,95 +23,144 @@
       height: 100%;
       overflow-x: hidden;
       font-family: Arial, sans-serif;
-    }
-
-    body {
       background: #000;
       color: #fff;
-      position: relative;
     }
 
     .background-video {
       position: fixed;
-      right: 0;
-      bottom: 0;
-      min-width: 100vw;
-      min-height: 100vh;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
       z-index: -1;
       object-fit: cover;
     }
 
+    .dashboard {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 12px 20px;
+      text-align: center;
+      font-size: 0.95em;
+      color: #ccc;
+      border-bottom: 1px solid #ff5ecb;
+    }
+
     .hero {
       text-align: center;
-      padding: 40px 20px 0;
+      padding: 40px 20px 10px;
     }
 
     .hero h1 {
-      font-size: 3.8em;
+      font-size: 3em;
       color: #ff5ecb;
       font-weight: bold;
-      text-shadow: 0 0 20px #ff5ecb;
+      text-shadow: 0 0 15px #ff5ecb;
     }
 
     .hero p {
-      font-size: 1.2em;
-      color: #ffffff;
+      font-size: 1.1em;
+      color: #fff;
     }
 
     .products {
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      flex-wrap: wrap;
       justify-content: center;
       padding: 20px;
+      gap: 20px;
     }
 
     .product-card {
-      background: #111;
+      background: rgba(0, 0, 0, 0.85);
+      padding: 20px;
       border-radius: 25px;
-      padding: 30px 25px;
-      box-shadow: 0 0 25px #ff5ecb;
-      max-width: 380px;
-      width: 90%;
-      margin-top: -30px;
       text-align: center;
+      flex: 1 1 300px;
+      max-width: 360px;
+      box-shadow: 0 0 25px #ff5ecb;
     }
 
     .product-card img {
-      max-width: 100%;
-      border-radius: 12px;
+      width: 100%;
+      border-radius: 10px;
       margin-bottom: 15px;
+      cursor: zoom-in;
     }
 
     .product-card h2 {
       font-size: 1.8em;
       color: #ff5ecb;
-      margin-bottom: 10px;
+      margin: 10px 0;
     }
 
     .product-card p {
       font-size: 1em;
       color: #fff;
+      line-height: 1.5;
     }
 
     .shop-button {
       display: inline-block;
-      margin-top: 18px;
-      padding: 12px 25px;
-      background-color: #ff5ecb;
+      margin-top: 15px;
+      padding: 12px 24px;
+      font-size: 1em;
+      background: #ff5ecb;
       color: #000;
-      text-decoration: none;
-      border-radius: 50px;
       font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      box-shadow: 0 0 10px #ff5ecb;
+    }
+
+    .promo-bar {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #ff5ecb;
+      color: #000;
+      font-weight: bold;
+      text-align: center;
+      padding: 12px 10px;
+      z-index: 999;
+      font-size: 1em;
+      box-shadow: 0 -2px 10px #ff5ecb;
+    }
+
+    .promo-bar a {
+      color: #000;
+      text-decoration: underline;
+      font-weight: bold;
+      margin-left: 8px;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2.2em;
+      }
+      .product-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+      .promo-bar {
+        font-size: 0.9em;
+      }
     }
   </style>
 </head>
 <body>
+
   <!-- Background Video -->
   <video class="background-video" autoplay loop muted playsinline>
-    <source src="Video%202.mp4" type="video/mp4" />
+    <source src="Video 2.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
+
+  <!-- Dashboard -->
+  <div class="dashboard">
+    Welcome to Elle's Virtual Market – Your hub for style, deals, and drops!
+  </div>
 
   <!-- Hero Section -->
   <div class="hero">
@@ -107,15 +168,79 @@
     <p>Scroll the runway. Experience affordable luxury.</p>
   </div>
 
-  <!-- Product Display -->
+  <!-- Product Lookbook with Carousel for Product #1 -->
   <div class="products">
     <div class="product-card">
-      <img src="3900409F-E8E5-48B6-9F9A-7A344B1A9888.jpeg" alt="White Flat Sandals">
+      <!-- Clickable thumbnail that opens the gallery -->
+      <a href="https://raw.githubusercontent.com/ElleBanx/fashion-landing-page/refs/heads/main/IMG_7509.jpeg" class="glightbox" data-gallery="white-sandals">
+        <img src="https://raw.githubusercontent.com/ElleBanx/fashion-landing-page/refs/heads/main/IMG_7509.jpeg" alt="White Flat Sandals" />
+      </a>
+      <!-- Hidden gallery images for lightbox -->
+      <a href="https://raw.githubusercontent.com/ElleBanx/fashion-landing-page/refs/heads/main/IMG_7510.jpeg" class="glightbox" data-gallery="white-sandals" style="display:none;"></a>
+      <a href="https://raw.githubusercontent.com/ElleBanx/fashion-landing-page/refs/heads/main/IMG_7511.jpeg" class="glightbox" data-gallery="white-sandals" style="display:none;"></a>
+      <a href="https://raw.githubusercontent.com/ElleBanx/fashion-landing-page/refs/heads/main/IMG_7512.jpeg" class="glightbox" data-gallery="white-sandals" style="display:none;"></a>
+      <a href="https://raw.githubusercontent.com/ElleBanx/fashion-landing-page/refs/heads/main/IMG_7513.jpeg" class="glightbox" data-gallery="white-sandals" style="display:none;"></a>
+      <a href="https://raw.githubusercontent.com/ElleBanx/fashion-landing-page/refs/heads/main/IMG_7514.jpeg" class="glightbox" data-gallery="white-sandals" style="display:none;"></a>
+
       <h2>White Flat Sandals</h2>
-      <p><strong>Use Code <span style="color:#ff5ecb">SPCV5</span> for 15% OFF</strong></p>
-      <p><span style="font-size: 1.2em">🔥</span> Snag these must-haves before they're gone! Korean Style Casual Flat Sandals – perfect for beach days, brunch dates, or just flexin' comfy chic vibes.</p>
-      <a class="shop-button" href="https://shein.com">Shop Now</a>
+      <p><strong>Use Code <span style="color:#ff5ecb;">SPCV5</span> for 15% OFF</strong></p>
+      <p><span style="font-size: 1.2em">🔥</span> Korean Style Casual Flat Sandals – perfect for beach days, brunch dates, or just flexin' comfy chic vibes.</p>
+      <a class="shop-button" href="https://shein.top/7yxc2uq">Shop Now</a>
+    </div>
+    <!-- Repeat similar product-card blocks here for the remaining products -->
+  </div>
+
+  <!-- Floating Promo Bar -->
+  <div class="promo-bar">
+    15% Off Sitewide – Use Code <strong>SPCV5</strong>
+    <a href="https://shein.top/7yxc2uq">Shop Now</a>
+  </div>
+
+  <!-- Quiz Pop-Up with Embedded Questions -->
+  <div id="quizPopup" class="quiz-popup" style="display:none;">
+    <div class="quiz-content">
+      <span id="closeQuiz" class="close-btn">&times;</span>
+      <h2>Find Your Style Match</h2>
+      <p>Answer a few quick questions to get personalized fashion picks + exclusive deals!</p>
+      <form id="quizForm">
+        <input type="email" name="email" placeholder="Enter your email" required />
+        <select name="style">
+          <option value="">What's your style vibe?</option>
+          <option>Casual Chic</option>
+          <option>Glam & Bold</option>
+          <option>Streetwear</option>
+          <option>Minimalist</option>
+        </select>
+        <select name="occasion">
+          <option value="">What are you shopping for?</option>
+          <option>Everyday Looks</option>
+          <option>Vacation</option>
+          <option>Workwear</option>
+          <option>Date Night</option>
+        </select>
+        <button type="submit">Get My Picks</button>
+      </form>
     </div>
   </div>
+
+  <!-- GLightbox Script -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    // Initialize GLightbox
+    const lightbox = GLightbox({
+      selector: '.glightbox'
+    });
+    
+    // Quiz popup logic: shows after 5 seconds
+    window.onload = function() {
+      setTimeout(function(){
+        document.getElementById('quizPopup').style.display = 'flex';
+      }, 5000);
+    };
+
+    document.getElementById('closeQuiz').onclick = function() {
+      document.getElementById('quizPopup').style.display = 'none';
+    };
+  </script>
 </body>
 </html>
