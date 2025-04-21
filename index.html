@@ -1,156 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BANX ON BANX - Affordable Luxury</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background: #000;
-      color: #fff;
-      overflow-x: hidden;
-    }
-    .background-video {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-      z-index: -1;
-    }
-    .hero {
-      text-align: center;
-      padding: 60px 20px 20px;
-    }
-    .hero h1 {
-      font-size: 2.5em;
-      color: #ff5ecb;
-      text-shadow: 0 0 15px #ff5ecb;
-    }
-    .hero p {
-      font-size: 1em;
-      color: #fff;
-    }
-    .products {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-      gap: 30px;
-    }
-    .product-card {
-      background: #111;
-      border-radius: 20px;
-      padding: 20px;
-      box-shadow: 0 0 15px #ff5ecb;
-      max-width: 380px;
-      width: 90%;
-      text-align: center;
-    }
-    .product-card img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 15px;
-    }
-    .product-card h2 {
-      font-size: 1.3em;
-      color: #ff5ecb;
-    }
-    .product-card p {
-      font-size: 0.95em;
-      color: #fff;
-    }
-    .shop-button {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
-      background-color: #ff5ecb;
-      color: #000;
-      text-decoration: none;
-      border-radius: 25px;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-<video class="background-video" autoplay loop muted playsinline>
-  <source src="Video%202.mp4" type="video/mp4" />
-</video>
+<!-- Product 1 Block -->
+<div class="product-card">
+  <h2 class="product-title">Sweetra Plus Size Women Black Plunging Neck Draped Fitted Mermaid Knit Dress</h2>
 
-<div class="hero">
-  <h1>BANX ON BANX</h1>
-  <p>Scroll the runway. Experience affordable luxury.</p>
+  <!-- Scrollable Image Gallery -->
+  <div class="image-gallery">
+    <img src="https://raw.githubusercontent.com/ElleBanx/fashion-landing-page/refs/heads/main/IMG_7509.jpeg" alt="Sweetra Dress 1" />
+    <img src="https://raw.githubusercontent.com/ElleBanx/fashion-landing-page/refs/heads/main/IMG_7510.jpeg" alt="Sweetra Dress 2" />
+    <img src="https://raw.githubusercontent.com/ElleBanx/fashion-landing-page/refs/heads/main/IMG_7511.jpeg" alt="Sweetra Dress 3" />
+    <img src="https://raw.githubusercontent.com/ElleBanx/fashion-landing-page/refs/heads/main/IMG_7512.jpeg" alt="Sweetra Dress 4" />
+    <img src="https://raw.githubusercontent.com/ElleBanx/fashion-landing-page/refs/heads/main/IMG_7513.jpeg" alt="Sweetra Dress 5" />
+    <img src="https://raw.githubusercontent.com/ElleBanx/fashion-landing-page/refs/heads/main/IMG_7514.jpeg" alt="Sweetra Dress 6" />
+  </div>
+
+  <!-- Product Info -->
+  <p><strong>💰 Price:</strong> $14.15 <span style="color:#ff66cc;">-27%</span></p>
+  <p><strong>Description:</strong> 🔥 Snag these must-haves on SHEIN before they're gone! Evening Party Gown 600+ sold</p>
+
+  <!-- CTA Button -->
+  <a href="https://shein.top/dw3r3d9" class="shop-button">Shop Now</a>
 </div>
 
-<div class="products">
-  <div class="product-card">
-    <img src="product1.jpeg" alt="Product 1">
-    <h2>Product 1 Title</h2>
-    <p><strong>Use Code <span style='color:#ff5ecb'>SPCV5</span> for 15% OFF</strong></p>
-    <p>🔥 Snag these must-haves before they're gone! Description for product 1 goes here.</p>
-    <a class="shop-button" href="https://your-affiliate-link.com">Shop Now</a>
-  </div>
+<!-- CSS for Product Cards -->
+<style>
+  .product-card {
+    background: #111;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 30px auto;
+    max-width: 500px;
+    box-shadow: 0 0 15px #ff00cc;
+  }
 
-  <div class="product-card">
-    <img src="product2.jpeg" alt="Product 2">
-    <h2>Product 2 Title</h2>
-    <p><strong>Use Code <span style='color:#ff5ecb'>SPCV5</span> for 15% OFF</strong></p>
-    <p>🔥 Snag these must-haves before they're gone! Description for product 2 goes here.</p>
-    <a class="shop-button" href="https://your-affiliate-link.com">Shop Now</a>
-  </div>
+  .product-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff66cc;
+    margin-bottom: 15px;
+  }
 
-  <div class="product-card">
-    <img src="product3.jpeg" alt="Product 3">
-    <h2>Product 3 Title</h2>
-    <p><strong>Use Code <span style='color:#ff5ecb'>SPCV5</span> for 15% OFF</strong></p>
-    <p>🔥 Snag these must-haves before they're gone! Description for product 3 goes here.</p>
-    <a class="shop-button" href="https://your-affiliate-link.com">Shop Now</a>
-  </div>
+  .image-gallery {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
 
-  <div class="product-card">
-    <img src="product4.jpeg" alt="Product 4">
-    <h2>Product 4 Title</h2>
-    <p><strong>Use Code <span style='color:#ff5ecb'>SPCV5</span> for 15% OFF</strong></p>
-    <p>🔥 Snag these must-haves before they're gone! Description for product 4 goes here.</p>
-    <a class="shop-button" href="https://your-affiliate-link.com">Shop Now</a>
-  </div>
+  .image-gallery img {
+    height: 300px;
+    border-radius: 10px;
+    scroll-snap-align: start;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
 
-  <div class="product-card">
-    <img src="product5.jpeg" alt="Product 5">
-    <h2>Product 5 Title</h2>
-    <p><strong>Use Code <span style='color:#ff5ecb'>SPCV5</span> for 15% OFF</strong></p>
-    <p>🔥 Snag these must-haves before they're gone! Description for product 5 goes here.</p>
-    <a class="shop-button" href="https://your-affiliate-link.com">Shop Now</a>
-  </div>
+  .shop-button {
+    display: inline-block;
+    background: #ff66cc;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+  }
 
-  <div class="product-card">
-    <img src="product6.jpeg" alt="Product 6">
-    <h2>Product 6 Title</h2>
-    <p><strong>Use Code <span style='color:#ff5ecb'>SPCV5</span> for 15% OFF</strong></p>
-    <p>🔥 Snag these must-haves before they're gone! Description for product 6 goes here.</p>
-    <a class="shop-button" href="https://your-affiliate-link.com">Shop Now</a>
-  </div>
+  .shop-button:hover {
+    background: #ff33aa;
+  }
 
-  <div class="product-card">
-    <img src="product7.jpeg" alt="Product 7">
-    <h2>Product 7 Title</h2>
-    <p><strong>Use Code <span style='color:#ff5ecb'>SPCV5</span> for 15% OFF</strong></p>
-    <p>🔥 Snag these must-haves before they're gone! Description for product 7 goes here.</p>
-    <a class="shop-button" href="https://your-affiliate-link.com">Shop Now</a>
-  </div>
-
-  <div class="product-card">
-    <img src="product8.jpeg" alt="Product 8">
-    <h2>Product 8 Title</h2>
-    <p><strong>Use Code <span style='color:#ff5ecb'>SPCV5</span> for 15% OFF</strong></p>
-    <p>🔥 Snag these must-haves before they're gone! Description for product 8 goes here.</p>
-    <a class="shop-button" href="https://your-affiliate-link.com">Shop Now</a>
-  </div>
-</div>
-
-</body>
-</html>
+  @media screen and (max-width: 500px) {
+    .image-gallery img {
+      height: 250px;
+    }
+  }
+</style>
